@@ -11,7 +11,26 @@
 //   fizz
 //   4
 //   buzz
+/**
+ * How to calculate a multiple of a given number:
+ * modulo operator - we can determine the remainder of the number during division i.e 9 % 3
+ * 
+ */
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+    for (let i = 1; i <= n; i++ ) {
+        //Is the number a multiple of 3 and 5?
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log('fizzbuzz');
+        } else if (i % 3 === 0) {
+            // is the number a multiple of 3
+            console.log('fizz');
+        } else if (i % 5 === 0) {
+            console.log('buzz');
+        } else {
+            console.log(i);
+        }
+    }
+}
 
 module.exports = fizzBuzz;

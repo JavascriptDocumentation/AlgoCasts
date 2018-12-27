@@ -11,6 +11,11 @@
 //   fizz
 //   4
 //   buzz
+/**
+ * How to calculate a multiple of a given number:
+ * modulo operator - we can determine the remainder of the number during division i.e 9 % 3
+ * 
+ */
 
 function fizzBuzz(n) {
   for (let i = 1; i <= n; i++) {
