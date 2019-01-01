@@ -9,22 +9,17 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 function chunk(array, size) {
-    //array that holds different chunks of data
     const chunked = []
-    //iterate through array
-    for(let element of array) {
-        //to get the last element of the array
-        const last = chunked[chunked.length - 1]
+    let index = 0
 
-        //if last does not exist or if last is equal to chunk size
-        if(!last || last.length === size) {
-            //add new element to chunked
-            chunked.push([element])
-        } else {
-            last.push(element)
-        }
+    while(index < array.length) {
+        //take the slice method and push it to chunked - this is for array
+        chunked.push = (array.slice(index, index + size))
+        //this is for size parameter, we incrementing by size variable
+        index += size
     }
-    return chunked 
+
+    return chunked
 }
 
 module.exports = chunk;
